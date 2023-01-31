@@ -30,7 +30,7 @@ class FlaskTestCase(unittest.TestCase):
         response = requests.post("http://localhost:5000/classify", json=input_data)
 
         result = response.json()
-        expected_result = {"class": 0}
+        expected_result = {"class": '0'}
 
         assert result == expected_result, f"Expected {expected_result} but got {result}"
         print("Test passed!")
