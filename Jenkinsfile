@@ -13,7 +13,7 @@ pipeline {
                 bat 'python -m pip install requests'
                 bat 'python -m pip install numpy'
                 bat 'python -m pip install keras'
-                bat 'python -m pip install tensorflow==2.4.0'
+                bat 'python -m pip install tensorflow'
                 bat 'python test_main.py'
             }
         }
