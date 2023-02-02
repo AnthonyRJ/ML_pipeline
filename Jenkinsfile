@@ -20,8 +20,8 @@ pipeline {
         
         stage('Docker deploy') {
             steps {
-                bat 'docker build -t -p 8081:5000 my-app .'
-                bat 'docker run -d -p  my-app'
+                bat 'docker build -t my-app .'
+                bat 'docker run -d -p 8081:5000  my-app'
             }
         }
     }
